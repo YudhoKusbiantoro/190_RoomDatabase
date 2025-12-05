@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import com.example.myroomsatu09.repositori.RepositoriSiswa
 import com.example.myroomsatu09.room.Siswa
 
-class EntryViewModel(private val repositoriSiswa: RepositoriSiswa) : ViewModel() {
+class EntryViewModel (private val repositoriSiswa: RepositoriSiswa) : ViewModel() {
 
     /**
      * Berisi status Siswa saat ini
@@ -35,6 +35,7 @@ class EntryViewModel(private val repositoriSiswa: RepositoriSiswa) : ViewModel()
             repositoriSiswa.insertSiswa(uiStateSiswa.detailSiswa.toSiswa())
         }
     }
+}
 
     /**
      * Mewakili Status UI untuk Siswa.
@@ -73,5 +74,4 @@ class EntryViewModel(private val repositoriSiswa: RepositoriSiswa) : ViewModel()
             alamat = alamat,
             telpon = telpon
         )
-}
 
