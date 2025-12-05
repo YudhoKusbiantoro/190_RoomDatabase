@@ -54,6 +54,8 @@ dependencies {
 
     //Room
     implementation(libs.bundles.room)
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.lifecycle.viewmodel.savedstate)
     ksp(libs.room.compiler)
     //ViewModel
     implementation(libs.lifecycle.viewmodel.compose)
